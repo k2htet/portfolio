@@ -51,7 +51,7 @@ const Card = ({ item }) => {
         <Typography variant="p">{item.lang.map((lang) => lang)}</Typography>
       </Box>
 
-      <Stack direction="row" justifyContent="flex-end" spacing={3}>
+      <Stack direction="row" justifyContent="flex-end" spacing={3} mt={2}>
         <a href={item.link} rel="noreferrer" target="_blank">
           <Button variant="contained" size="small">
             Code
