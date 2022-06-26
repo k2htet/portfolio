@@ -35,7 +35,12 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <img src={profile} alt="profile" className="profile" />
+            <img
+              src={profile}
+              alt="profile"
+              className="profile"
+              loading="lazy"
+            />
           </Box>
           <Box
             sx={{
