@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Home, Portfolio, About, Skills, Contact } from "./pages";
+import { Navbar, Footer } from "./components";
+import { useState, useEffect } from "react";
+import { Rings } from "react-loader-spinner";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoading = () => {
+    setIsLoading(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("load", handleLoading);
+    return () => window.removeEventListener("load", handleLoading);
+  }, []);
+  return !isLoading ? (
+    <>
+      <Navbar />
+      <Home />
+      <Portfolio />
+      <About />
+      <Skills />
+      <Contact />
+      <Footer />
+    </>
+  ) : (
+    <div className="loader">
+      <Rings height="100" width="100" color="#FE6F27" ariaLabel="loading" />
     </div>
   );
-}
+};
 
 export default App;
