@@ -8,7 +8,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoading = () => {
-    setIsLoading((prev) => !prev);
+    setIsLoading(false);
   };
 
   useEffect(() => {
