@@ -13,15 +13,16 @@ export const data = [
   {
     title: "Starwar API",
     img: starwar,
-    des: "Learning server side state management with react-query and refactor source code.",
+    des: "Server side state management with react-query and refactor source code.",
     lang: ["ReactJs and hooks, ", "React-Query"],
     link: "https://github.com/k2htet/Starwar",
+    live: "https://starwar-mu.vercel.app/",
     responsive: "No",
   },
   {
     title: "Simple Counter",
     img: counter,
-    des: "Learning client side state management with React useReducer hook + context Api",
+    des: "Client side state management with React useReducer hook + context Api",
     lang: ["ReactJs and hooks "],
     link: "https://github.com/k2htet/counter",
     responsive: "No",
