@@ -66,7 +66,7 @@ theme.typography.h3 = {
 };
 
 theme.typography.h5 = {
-  fontSize: "0.9rem",
+  fontSize: "1rem",
   color: "#fff",
   [theme.breakpoints.up("md")]: {
     fontSize: "1rem",

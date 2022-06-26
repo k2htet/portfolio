@@ -7,6 +7,7 @@ export const data = [
     des: "Customize material UI, clean Files Folder structure and own figma design",
     lang: ["ReactJs, ", "Material UI"],
     link: "https://github.com/k2htet/Starwar",
+    live: "https://kokohtet.vercel.app/",
     responsive: "Yes",
   },
   {

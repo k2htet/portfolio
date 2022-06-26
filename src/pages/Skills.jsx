@@ -61,6 +61,7 @@ const Skills = () => {
                   lg={12}
                   component={motion.div}
                   variants={child}
+                  key={skill.title}
                 >
                   <Skill title={skill.title} value={skill.value} />
                 </Grid>
@@ -95,6 +96,7 @@ const Skills = () => {
                   lg={12}
                   component={motion.div}
                   variants={child}
+                  key={item.title}
                 >
                   <Skill title={item.title} value={item.value} />
                 </Grid>

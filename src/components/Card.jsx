@@ -30,11 +30,14 @@ const Card = ({ item }) => {
         />
       </Box>
       <Box mt="20px">
-        <Typography variant="h6">{item.title}</Typography>
-        <Typography variant="p" sx={{ fontFamily: "Roboto" }}>
-          {item.des}
+        <Typography variant="h6">
+          {item.title} ({" "}
+          <Typography variant="p">Responsive - {item.responsive}</Typography>)
         </Typography>
+        <Typography variant="p">{item.des}</Typography>
+        <br />
       </Box>
+
       <div
         style={{
           width: "50%",
@@ -45,15 +48,22 @@ const Card = ({ item }) => {
       />
       <Box>
         <Typography variant="h6">Frameworks</Typography>
-        <Typography variant="p" sx={{ fontFamily: "Roboto" }}>
-          {item.lang.map((lang) => lang)}
-        </Typography>
+        <Typography variant="p">{item.lang.map((lang) => lang)}</Typography>
       </Box>
-      <Typography variant="p">Responsive - {item.responsive}</Typography>
+
       <Stack direction="row" justifyContent="flex-end" spacing={3}>
         <a href={item.link} rel="noreferrer" target="_blank">
-          <Button variant="contained">Code</Button>
+          <Button variant="contained" size="small">
+            Code
+          </Button>
         </a>
+        {item?.live && (
+          <a href={item.live} rel="noreferrer" target="_blank">
+            <Button variant="contained" size="small">
+              Demo
+            </Button>
+          </a>
+        )}
       </Stack>
     </Box>
   );
