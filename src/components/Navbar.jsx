@@ -27,9 +27,7 @@ const Navbar = () => {
             justifyContent="space-between"
             alignItems="center"
           >
-            <a href="/#">
-              <Typography variant="h3">K2HTET</Typography>
-            </a>
+            <Typography variant="h3">K2HTET</Typography>
 
             <Stack
               direction="row"

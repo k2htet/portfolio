@@ -68,3 +68,10 @@ a {
 
   background-color: #1f1f1f;
 }
+
+.contact-arrow {
+  position: absolute;
+  bottom: 4rem;
+  right: 1.5rem;
+  z-index: 2;
+}

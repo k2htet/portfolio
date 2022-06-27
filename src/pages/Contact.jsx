@@ -1,7 +1,7 @@
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 import { Box, Container, Typography, Stack } from "@mui/material";
 import { motion } from "framer-motion";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsFillArrowUpCircleFill } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 import { AiFillPhone, AiFillGithub } from "react-icons/ai";
 
@@ -25,6 +25,11 @@ const Contact = () => {
       id="contact"
       sx={{
         backgroundColor: "primary.main",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: "column",
+        position: "relative",
       }}
     >
       <Header title="Contact" />
@@ -72,6 +77,17 @@ const Contact = () => {
           </Stack>
         </Stack>
       </Container>
+      <Footer />
+
+      <a href="#home" className="contact-arrow">
+        <BsFillArrowUpCircleFill
+          size={40}
+          style={{
+            borderRadius: "50%",
+            boxShadow: "0px 10px 10px #1f1f1f",
+          }}
+        />
+      </a>
     </Box>
   );
 };

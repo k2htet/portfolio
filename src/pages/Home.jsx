@@ -11,6 +11,7 @@ const Home = () => {
       justifyContent="center"
       alignItems="center"
       direction="column"
+      id="home"
     >
       <Container>
         <Stack

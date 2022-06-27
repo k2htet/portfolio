@@ -1,6 +1,6 @@
 import React from "react";
 import { Home, Portfolio, About, Skills, Contact } from "./pages";
-import { Navbar, Footer } from "./components";
+import { Navbar } from "./components";
 import { useState, useEffect } from "react";
 import { Rings } from "react-loader-spinner";
 
@@ -30,8 +30,6 @@ const App = () => {
       <About />
       <Skills />
       <Contact />
-      <Footer />
-      {document.readyState && console.log("ready")}
     </>
   );
 };
