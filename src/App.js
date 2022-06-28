@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Home, Portfolio, About, Skills, Contact } from "./pages";
 import { Navbar } from "./components";
-import { useState, useEffect } from "react";
 import { Rings } from "react-loader-spinner";
+import { IoIosArrowUp } from "react-icons/io";
+import { motion, useViewportScroll } from "framer-motion";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const { scrollY } = useViewportScroll();
 
   const pageLoad = () => setIsLoading(false);
 
@@ -30,6 +33,21 @@ const App = () => {
       <About />
       <Skills />
       <Contact />
+
+      <motion.a
+        href="#home"
+        className="contact-arrow"
+        style={{ opacity: scrollY }}
+      >
+        <IoIosArrowUp
+          size={23}
+          style={{
+            borderRadius: "50%",
+
+            color: "#FE6F27",
+          }}
+        />
+      </motion.a>
     </>
   );
 };
