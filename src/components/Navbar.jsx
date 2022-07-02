@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <Box
-      id="#home"
+      id="home"
       sx={{
         backgroundColor: "primary.main",
         position: "relative",
