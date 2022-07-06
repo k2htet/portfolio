@@ -5,7 +5,7 @@ const Card = ({ item }) => {
     <Box
       sx={{
         backgroundColor: "primary.main",
-        width: { sx: "50%", sm: "60%", md: "80%", lg: "100%" },
+        width: { sx: "50%", sm: "60%", md: "80%", lg: "80%" },
         height: "auto",
         color: "white",
         padding: "15px",
