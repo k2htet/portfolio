@@ -20,6 +20,15 @@ export const data = [
     responsive: "No",
   },
   {
+    title: "Simple Ecommerce",
+    img: starwar,
+    des: "Server side state management with react-query and client for redux-toolkit",
+    lang: ["ReactJs ", "React-Query ", "Redux-toolkit"],
+    link: "https://github.com/k2htet/fakestore",
+    live: "https://kkstore.vercel.app/",
+    responsive: "Mobile-first",
+  },
+  {
     title: "Simple Counter",
     img: counter,
     des: "Client side state management with React useReducer hook + context Api",
@@ -49,8 +58,8 @@ export const skillsData = [
 ];
 
 export const lib = [
-  { title: "Material Ui", value: 70 },
-  { title: "Tailwind CSS", value: 70 },
+  { title: "Material Ui,Tailwind CSS", value: 70 },
+  { title: "Redux-Toolkit", value: 60 },
   { title: "React-Query", value: 60 },
   { title: "Git & Github", value: 60 },
 ];

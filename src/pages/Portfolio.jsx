@@ -41,7 +41,7 @@ const Portfolio = () => {
               xs={12}
               sm={12}
               md={6}
-              lg={4}
+              lg={6}
               id={item.title}
               key={item.title}
               component={motion.div}
