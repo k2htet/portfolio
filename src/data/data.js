@@ -1,4 +1,4 @@
-import { portfolio, starwar, counter } from "../assets";
+import { portfolio, starwar, counter, ecommerce } from "../assets";
 
 export const data = [
   {
@@ -21,7 +21,7 @@ export const data = [
   },
   {
     title: "Simple Ecommerce",
-    img: starwar,
+    img: ecommerce,
     des: "Server side state management with react-query and client for redux-toolkit",
     lang: ["ReactJs ", "React-Query ", "Redux-toolkit"],
     link: "https://github.com/k2htet/fakestore",
