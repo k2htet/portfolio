@@ -33,7 +33,7 @@ const Portfolio = () => {
           variants={container}
           initial="initial"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
           {data.map((item) => (
             <Grid

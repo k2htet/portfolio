@@ -58,8 +58,8 @@ export const skillsData = [
 ];
 
 export const lib = [
-  { title: "Material Ui,Tailwind CSS", value: 70 },
-  { title: "Redux-Toolkit", value: 60 },
+  { title: "Material Ui", value: 70 },
+  { title: "Redux-Toolkit ", value: 60 },
   { title: "React-Query", value: 60 },
   { title: "Git & Github", value: 60 },
 ];
