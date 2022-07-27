@@ -1,4 +1,4 @@
-import { portfolio, starwar, counter, ecommerce } from "../assets";
+import { portfolio, starwar, ecommerce, space } from "../assets";
 
 export const data = [
   {
@@ -9,6 +9,15 @@ export const data = [
     link: "https://github.com/k2htet/Starwar",
     live: "https://kokohtet.vercel.app/",
     responsive: "Yes",
+  },
+  {
+    title: "Space Tour",
+    img: space,
+    des: "Challenge from frontend menthor",
+    lang: ["ReactJs ", "Material UI"],
+    link: "https://github.com/k2htet/space-tour",
+    live: "https://space-tour-chi.vercel.app/",
+    responsive: "yes",
   },
   {
     title: "Starwar API",
@@ -27,14 +36,6 @@ export const data = [
     link: "https://github.com/k2htet/fakestore",
     live: "https://kkstore.vercel.app/",
     responsive: "Mobile-first",
-  },
-  {
-    title: "Simple Counter",
-    img: counter,
-    des: "Client side state management with React useReducer hook + context Api",
-    lang: ["ReactJs and hooks "],
-    link: "https://github.com/k2htet/counter",
-    responsive: "No",
   },
 ];
 
