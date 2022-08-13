@@ -29,13 +29,13 @@ export const data = [
     responsive: "No",
   },
   {
-    title: "Simple Ecommerce",
+    title: "Ecommerce",
     img: ecommerce,
     des: "Server side state management with react-query and client for redux-toolkit",
     lang: ["ReactJs ", "React-Query ", "Redux-toolkit"],
-    link: "https://github.com/k2htet/fakestore",
-    live: "https://kkstore.vercel.app/",
-    responsive: "Mobile-first",
+    link: "https://github.com/k2htet/sunflower-ecommerce",
+    live: "https://sunflower-ecommerce.vercel.app/",
+    responsive: "Yes",
   },
 ];
 
