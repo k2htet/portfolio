@@ -47,8 +47,7 @@ const Contact = () => {
           <Box textAlign="center" mb={3}>
             <Typography variant="h3">
               Looking for a fulltime <br />
-              junior <span style={{ color: "#FE6F27" }}>ReactJs</span>{" "}
-              developer?
+              <span style={{ color: "#FE6F27" }}>ReactJs</span> developer?
             </Typography>
             <Typography variant="h5" mt={1}>
               You <span style={{ color: "#FE6F27" }}>found</span>.
