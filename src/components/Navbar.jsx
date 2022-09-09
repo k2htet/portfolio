@@ -1,6 +1,6 @@
 import { Container, Stack, Typography, Box } from "@mui/material";
 
-import { AiOutlinePhone, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
 import { ImCross } from "react-icons/im";
 const Navbar = () => {
@@ -11,8 +11,6 @@ const Navbar = () => {
       id="home"
       sx={{
         backgroundColor: "primary.main",
-        position: "relative",
-        overflow: "hidden",
       }}
       justifyContent="center"
       alignItems="center"
@@ -52,18 +50,6 @@ const Navbar = () => {
                 <Typography variant="h5">Contact</Typography>
               </a>
             </Stack>
-
-            <Typography
-              variant="h5"
-              sx={{
-                display: {
-                  xs: "none",
-                  md: "flex",
-                },
-              }}
-            >
-              <AiOutlinePhone /> 09-962,560,377
-            </Typography>
 
             <Box
               sx={{
